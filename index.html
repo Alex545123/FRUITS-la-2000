@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="imagenes/Captura de pantalla 2026-10-25 103309.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRUITS LA 2000</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="header-container">
+
+            <a href="index.html" class="wrap-logo">
+                <img src="imagenes/Captura de pantalla 2026-10-25 103309.png" alt="Logo Fruits La 2000"
+                     class="logo-header">
+                <span class="logo-link">FRUITS <span>LA 2000</span></span>
+            </a>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                </ul>
+            </nav>
+
+            <a href="#productos" class="header-button">
+                Comprar ahora
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN PRINCIPAL -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-content">
+                <span class="hero-tag">Frescura todos los días</span>
+
+                <h1>
+                    Lo mejor de la naturaleza,
+                    <span>directo para ti.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Descubre frutas y verduras frescas, calidad excepcional
+                    y precios que cuidan tu bolsillo.
+                    ¡En FRUITS LA 2000 tenemos lo que necesitas!
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#productos" class="hero-button">
+                        Explorar productos →
+                    </a>
+
+                    <a href="#nosotros" class="secondary-button">
+                        Conócenos
+                    </a>
+                </div>
+
+                <div class="hero-benefits">
+                    <span>✓ Productos frescos</span>
+                    <span>✓ Buenos precios</span>
+                    <span>✓ Calidad y confianza</span>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=1000&q=85"
+                    alt="Variedad de frutas frescas y coloridas">
+                <div class="image-label">
+                    <span>Frescura natural</span>
+                    <strong>Todos los días</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="benefits">
+            <article class="benefit-item">
+                <span class="benefit-icon">🍎</span>
+                <div>
+                    <h3>Calidad</h3>
+                    <p>Productos seleccionados para ti.</p>
+                </div>
+            </article>
+
+            <article class="benefit-item">
+                <span class="benefit-icon">🌿</span>
+                <div>
+                    <h3>Frescura</h3>
+                    <p>El sabor natural de cada fruta y verdura.</p>
+                </div>
+            </article>
+
+            <article class="benefit-item">
+                <span class="benefit-icon">💚</span>
+                <div>
+                    <h3>Buenos precios</h3>
+                    <p>Calidad que cuida tu bolsillo.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- VIDEO -->
+        <section class="video-section" id="video">
+            <div class="section-heading">
+                <span class="section-tag">Colores vivos, frutas y verduras altas en frescura</span>
+                <h2>Del campo a tu mesa</h2>
+                <p>Conoce la frescura y el cuidado con que seleccionamos cada fruta y verdura.</p>
+            </div>
+
+            <div class="video-wrapper">
+                <!-- Video propio: guarda tu archivo en la carpeta "videos" -->
+                <video controls preload="metadata" playsinline>
+                    <source src="Videos.mp4/Modelo DV6 VIDEO PUBLICITARIO PARA FRUTAS Y VERDURAS.mp4" type="video/mp4">
+                </video>
+
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="products-section" id="productos">
+            <div class="section-heading">
+                <span class="section-tag">Nuestros productos</span>
+                <h2>Color, sabor y frescura</h2>
+                <p>Encuentra tus frutas y verduras favoritas al mejor precio.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button type="button" class="filter-btn active" data-filtro="Todos">Todos</button>
+                <button type="button" class="filter-btn" data-filtro="Frutas">🍎 Frutas</button>
+                <button type="button" class="filter-btn" data-filtro="Verduras">🥕 Verduras</button>
+            </div>
+
+            <div class="products-grid" id="productos-grid">
+
+                <article class="product-card" data-categoria="Frutas">
+                    <div class="product-media"><img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=700&q=80" alt="Foto de Manzana" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3>Manzana</h3>
+                        <p>Frescas, crujientes y deliciosas.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$8.500 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Manzana">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Frutas">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdhFu0Z_MN3ouYta-J-7rZaZ_py_6o6f_Pqy_KR73fDw&s=10" alt="Foto de Banano" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3>Banano</h3>
+                        <p>Una opción deliciosa para cada día.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$3.200 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Banano">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Frutas">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69D5Lva5mayHXC6O5PtqpDstKZgWyM4uX7_AlKnFPEAynlW21XrwPBDLn&s=10" alt="Foto de Naranja" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3>Naranja</h3>
+                        <p>Color, sabor y frescura natural.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$2.800 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Naranja">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Frutas">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVzMnj0WCI_UNryodM-pSQKnvgXAU0ulwa1E8vGJHE5A&s=10" alt="Foto de Fresa" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3>Fresa</h3>
+                        <p>Dulces y jugosas, ideales para postres.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$9.000 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Fresa">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Frutas">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi6HQHDwf0GQnz4CFE7QsGvX6sPUAmoXDZHbIBB-fEcQ&s=10" alt="Foto de Piña" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3>Piña</h3>
+                        <p>Tropical, dulce y refrescante.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$5.000 <small>/ und</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Piña">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Frutas">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcMNi6WAbyesx5sPfFA7HRcjDbTa9qjEaNh-rUsc_V-g&s=10" alt="Foto de Mango" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3>Mango</h3>
+                        <p>Maduro y lleno de sabor.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$4.500 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Mango">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Frutas">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIkrh4diRVha_G7p4wKWVuysd1t0MchPBnN-1Hp4_PAQ&s=10" alt="Foto de Sandía" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3>Sandía</h3>
+                        <p>Perfecta para los días de calor.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$2.200 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Sandía">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Frutas">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpj7uVw4HM7c6EHE6eWVzRyCmnvWXFp0_RT0aMclFLeQ&s=10" alt="Foto de Limón" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Frutas</span>
+                        <h3>Limón</h3>
+                        <p>Jugoso, para jugos y para cocinar.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$4.000 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Limón">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Verduras">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcv0erHC8clK5TzQR3P5-XsRN1RM1cRO9J0wua0vn_EQ&s=10" alt="Foto de Tomate" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Verduras</span>
+                        <h3>Tomate</h3>
+                        <p>Rojo, firme y de sabor intenso.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$3.800 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Tomate">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Verduras">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxAd6lWLK_dm4wkHbtGB7QNv5EpOztY3mDpWvGKPjjyw&s=10" alt="Foto de Cebolla" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Verduras</span>
+                        <h3>Cebolla</h3>
+                        <p>Básica para todos tus guisos.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$3.200 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Cebolla">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Verduras">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt762DlY_jW-CoBk8qZ2QTTaXhUzdra6dFCqxvVojsNQ&s=10" alt="Foto de Zanahoria" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Verduras</span>
+                        <h3>Zanahoria</h3>
+                        <p>Crujiente, dulce y nutritiva.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$2.500 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Zanahoria">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Verduras">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaV_OahzDHtV5NhU2-n4bBUB0LpJOc8o1AfelAZ4LT1Q&s=10" alt="Foto de Papa" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Verduras</span>
+                        <h3>Papa</h3>
+                        <p>Ideal para sopas, purés y fritos.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$2.600 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Papa">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Verduras">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7q0JzwETdXvnoSRw1Q3qdgeqaiLwSWRi_3Y6pXoHdA&s=10" alt="Foto de Lechuga" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Verduras</span>
+                        <h3>Lechuga</h3>
+                        <p>Hojas frescas para tus ensaladas.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$3.000 <small>/ und</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Lechuga">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Verduras">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ02An2n6_8VtNxt1Ck_txlxtoGL90zB1bwtTeObAKqog&s=10" alt="Foto de Pimentón" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Verduras</span>
+                        <h3>Pimentón</h3>
+                        <p>Aporta color y sabor a tus platos.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$5.000 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Pimentón">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Verduras">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTexxo9b7p4GNFs1qeAnNzmDI5t5Q1pTN7pEovTJSlh-A&s=10" alt="Foto de Pepino" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Verduras</span>
+                        <h3>Pepino</h3>
+                        <p>Fresco y ligero.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$3.000 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Pepino">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-categoria="Verduras">
+                    <div class="product-media"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsKMdhF2DtM1M8RcuGFeqOBTG69gvAGKRvnY9WiXLjJg&s=10" alt="Foto de Brócoli" loading="lazy"></div>
+                    <div class="product-info">
+                        <span class="product-category">Verduras</span>
+                        <h3>Brócoli</h3>
+                        <p>Verde, saludable y lleno de vitaminas.</p>
+                        <div class="product-bottom">
+                            <span class="product-price">$6.500 <small>/ kg</small></span>
+                            <a href="#contacto" class="product-link" data-producto="Brócoli">Pedir →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- TABLA DE PRODUCTOS Y PRECIOS -->
+        <section class="price-section" id="precios">
+            <div class="section-heading">
+                <span class="eyebrow">NUESTRO CATÁLOGO</span>
+                <h2>Productos disponibles</h2>
+                <p>Consulta nuestros productos y sus precios en pesos colombianos (COP).</p>
+            </div>
+
+            <div class="table-container">
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Disponibilidad</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Manzana</td>
+                            <td>Frutas</td>
+                            <td>$8.500 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Banano</td>
+                            <td>Frutas</td>
+                            <td>$2.500 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Naranja</td>
+                            <td>Frutas</td>
+                            <td>$2.800 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Fresa</td>
+                            <td>Frutas</td>
+                            <td>$7.500 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Piña</td>
+                            <td>Frutas</td>
+                            <td>$4.000 / und</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mango</td>
+                            <td>Frutas</td>
+                            <td>$4.500 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sandía</td>
+                            <td>Frutas</td>
+                            <td>$2.200 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Limón</td>
+                            <td>Frutas</td>
+                            <td>$4.000 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tomate</td>
+                            <td>Verduras</td>
+                            <td>$3.000 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Cebolla</td>
+                            <td>Verduras</td>
+                            <td>$2.500 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Zanahoria</td>
+                            <td>Verduras</td>
+                            <td>$2.500 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Papa</td>
+                            <td>Verduras</td>
+                            <td>$2.500 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Lechuga</td>
+                            <td>Verduras</td>
+                            <td>$2.000 / und</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Pimentón</td>
+                            <td>Verduras</td>
+                            <td>$5.000 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Pepino</td>
+                            <td>Verduras</td>
+                            <td>$3.000 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                        <tr>
+                            <td>Brócoli</td>
+                            <td>Verduras</td>
+                            <td>$6.500 / kg</td>
+                            <td><span class="status">Disponible</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="table-note">
+                <em>Los precios son referenciales y pueden variar según el día y la cantidad.</em>
+            </p>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="about-section" id="nosotros">
+            <div class="about-decoration">🌱</div>
+
+            <div class="about-content">
+                <span class="section-tag">Nuestra esencia</span>
+                <h2>Frescura y buenos precios para todos</h2>
+                <p>
+                    En FRUITS LA 2000 creemos que disfrutar de productos
+                    frescos y de calidad debe estar al alcance de todos.
+                    Trabajamos para ofrecerte una experiencia de compra
+                    cercana, agradable y llena de sabor.
+                </p>
+                <a href="#contacto" class="hero-button">
+                    Contáctanos →
+                </a>
+            </div>
+        </section>
+
+        <!-- NUEVO: UBICACIÓN (mapa dentro de Nosotros) -->
+        <section class="location" id="ubicacion">
+            <div class="location-header">
+                <h3>📍 Nuestra ubicación</h3>
+                <p class="location-address">Cl. 58 #62a6, Playa Rica, Bello, Antioquia</p>
+                <a class="product-link"
+                   href="https://www.google.com/maps/search/?api=1&query=Cl.%2058%20%2362a6%2C%20Playa%20Rica%2C%20Bello%2C%20Antioquia"
+                   target="_blank" rel="noopener">
+                    Cómo llegar →
+                </a>
+            </div>
+
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.400753811189!2d-75.56938162524199!3d6.3421133252451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442fb1c2d9ec0d%3A0x8cecb777939941b!2sCl.%2058%20%2362a6%2C%20Playa%20Rica%2C%20Bello%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1792763231130!5m2!1ses!2sco"
+                    title="Mapa de ubicación de FRUITS LA 2000"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="contact section-padding" id="contacto">
+            <div class="section-heading">
+                <span class="eyebrow">CONTÁCTANOS</span>
+                <h2>¡Estamos para ayudarte!</h2>
+                <p>
+                    ¿Buscas frutas y verduras frescas o quieres conocer nuestros precios?
+                    <em>En FRUITS LA 2000 te atendemos con gusto.</em>
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Escribe tu nombre"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="producto">Producto de interés</label>
+                    <input
+                        type="text"
+                        id="producto"
+                        name="producto"
+                        placeholder="Ej. manzanas, tomates..."
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad">Cantidad aproximada</label>
+                    <input
+                        type="number"
+                        id="cantidad"
+                        name="cantidad"
+                        min="1"
+                        placeholder="Ej. 5"
+                        required
+                    >
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="mensaje">Mensaje adicional</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribe aquí tus preguntas o detalles del pedido..."
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Enviar consulta
+                </button>
+
+                <p class="form-note">
+                    Completa tus datos para preparar tu consulta.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <a href="#inicio" class="footer-brand">FRUITS LA 2000</a>
+        <p>Productos frescos a precios bajos.</p>
+        <p class="copyright">
+            © 2026 FRUITS LA 2000. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <!-- Filtro de productos y botón "Pedir" -->
+    <script>
+        const botones = document.querySelectorAll(".filter-btn");
+        const tarjetas = document.querySelectorAll(".product-card");
+
+        botones.forEach(function (boton) {
+            boton.addEventListener("click", function () {
+                botones.forEach(function (b) { b.classList.remove("active"); });
+                boton.classList.add("active");
+
+                const filtro = boton.dataset.filtro;
+                tarjetas.forEach(function (tarjeta) {
+                    const visible = filtro === "Todos" || tarjeta.dataset.categoria === filtro;
+                    tarjeta.hidden = !visible;
+                });
+            });
+        });
+
+        document.querySelectorAll(".product-link[data-producto]").forEach(function (enlace) {
+            enlace.addEventListener("click", function () {
+                document.getElementById("producto").value = enlace.dataset.producto;
+            });
+        });
+    </script>
+
+</body>
+</html>
